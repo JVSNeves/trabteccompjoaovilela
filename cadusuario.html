@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            text-align: center;
+            background-color: rgb(48, 48, 48);
+            color: black;
+        }
+        header{
+            align-items: center;
+            background-color: rgb(90, 141, 199);
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        
+        .menu{
+            color: rgb(235, 235, 235);
+            text-decoration: none;
+            
+        }
+        .menu:hover{
+            text-decoration: underline;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            width: 8%;
+            font-size: 20px;
+            margin-right: 20px;
+
+        }
+        fieldset{
+                border-radius: 10px;
+                margin-top: 6%;
+                margin-left: 35%;
+                margin-right: 35%;
+                background-color: rgb(240, 240, 240);
+                color: black;
+                border-style: none;    
+        }
+        legend{
+            font-family: 'Hind Madurai', sans-serif;
+            font-size: 30px;
+            border-radius: 12px;
+            text-align: left;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: rgb(90, 141, 199);
+            margin-left: 15px;
+        }
+        .text{
+            border-style: none;
+            background-color: rgb(219, 219, 219);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            width: 60%;
+        
+        }
+        .text:hover{
+            background-color: rgb(205, 205, 205);
+            transition-duration: 0.2s;
+        }
+        .login{
+            align-items: center;
+            margin-top: 5%;
+            
+        }
+        #botaoentrar{
+            background-color: rgb(90, 141, 199);
+            max-width: 30%;
+            font-size: 18px;
+            font-family: 'Ubuntu', sans-serif;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        #botaoentrar:hover{
+            background-color: rgb(100, 158, 224);
+            transition-duration: 0.2s;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(67, 67, 252);
+            max-height: 80px;
+        }
+        .redir:hover{
+            color: rgb(100, 100, 255);
+        }
+        .loginextra{
+            color: rgb(75, 75, 75);
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        #masc{
+            margin: 0; 
+            padding: 0;
+            
+        }
+        #fem{
+            margin: 0; 
+            padding: 0;
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <a style="margin-left: 20px; border-radius: 20px; margin-top: 5px; margin-bottom: 5px;" href="index.html"><img style="height: 70px; width: 70px; border-radius: 20px; margin-top: 5px; margin-bottom: 5px;" src="img/logo.jpg" alt=""></a>
+        <nav><a class="menu" href="index.html">Início</a></nav>
+    </header>
+    <fieldset>
+        <legend>Crie uma conta</legend>
+        <section>
+        
+            <div class="login">
+                <form action="">
+                    <input class="text" type="text" placeholder="Usuário">
+                    <input class="text" type="email" placeholder="E-mail">
+                    <input class="text" type="password" placeholder="Senha">
+                    <input class="text" type="password" placeholder="Confirme sua senha"><br>
+                    <div style="margin-top: 2%; margin-bottom: 2%; margin-left: 20%; margin-right: 20%; text-align: left;">
+                        <label for="">Data de nascimento: <br> </label><input style="background-color: rgb(219, 219, 219); border-style: none; font-size: 19px; border-radius: 5px; color: rgb(98, 98, 98);" type="date" min="1900-01-01" max="2050-12-31">
+                    </div>
+                    
+                    <div style="margin-top: 2%; margin-bottom: 2%; margin-left: 20%; margin-right: 20%; text-align: left;">
+                        Gênero: <br>
+                        <input type="radio" id="masc" name="genero" value="MASC"><label style="font-size: 19px;" for="masc"> Masculino</label> 
+                        <input type="radio" id="fem" name="genero" value="FEM"><label style="font-size: 19px;" for="fem"> Feminino</label>
+                        <input type="radio" id="outro" name="genero" value="OUTRO"><label style="font-size: 19px;" for="outro"> Outro</label>       
+                    </div>
+                    
+                  <input class="text" id="botaoentrar" type="submit" value="Cadastrar">
+                  <hr>
+                  <div class="loginextra">
+                    Já possui uma conta? <a class="redir" href="login.html">Entre aqui</a>
+                </div>
+                </form>
+            </div>
+
+
+
+        </section>
+</fieldset>
+</body>
+</html>

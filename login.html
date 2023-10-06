@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            text-align: center;
+            background-color: rgb(48, 48, 48);
+            color: black;
+        }
+        header{
+            align-items: center;
+            background-color: rgb(90, 141, 199);
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        
+        .menu{
+            color: rgb(235, 235, 235);
+            text-decoration: none;
+            
+        }
+        .menu:hover{
+            text-decoration: underline;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            width: 8%;
+            font-size: 20px;
+            margin-right: 20px;
+
+        }
+        fieldset{
+                border-radius: 10px;
+                margin-top: 10%;
+                margin-left: 35%;
+                margin-right: 35%;
+                background-color: rgb(240, 240, 240);
+                color: black;
+                border-style: none;
+                
+                
+                
+            
+        }
+        legend{
+            font-family: 'Hind Madurai', sans-serif;
+            font-size: 30px;
+            border-radius: 12px;
+            text-align: left;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: rgb(90, 141, 199);
+            margin-left: 15px;
+        }
+        input{
+            border-style: none;
+            background-color: rgb(219, 219, 219);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            width: 60%;
+        
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
+            
+        }
+        .text:hover{
+            background-color: rgb(205, 205, 205);
+            transition-duration: 0.2s;
+        }
+        #botaoentrar{
+            background-color: rgb(90, 141, 199);
+            max-width: 30%;
+            font-size: 18px;
+            font-family: 'Ubuntu', sans-serif;
+            margin-bottom: 5%;
+        }
+        #botaoentrar:hover{
+            background-color: rgb(100, 158, 224);
+            transition-duration: 0.2s;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(67, 67, 252);
+        }
+        .redir:hover{
+            color: rgb(100, 100, 255);
+        }
+        .loginextra{
+            color: rgb(75, 75, 75);
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+
+        @media (max-width: 600px) {
+            .facet_sidebar {
+            display: none;
+        }
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <a style="margin-left: 20px; border-radius: 20px; margin-top: 5px; margin-bottom: 5px;" href="index.html"><img style="height: 70px; width: 70px; border-radius: 20px; margin-top: 5px; margin-bottom: 5px;" src="img/logo.jpg" alt=""></a>
+        <nav><a class="menu" href="index.html">Início</a></nav>
+    </header>
+    <fieldset>
+        <legend>Entrar</legend>
+        <section>
+            <form action="">
+                <div class="login">
+                <input class="text" type="text" placeholder="Usuário">
+                <input class="text" type="password" placeholder="Senha">  
+                <input class="text" id="botaoentrar" type="submit" value="Entrar">
+            </div>
+            <hr>
+            <div class="loginextra">
+                Não possui uma conta? <a class="redir" href="cadusuario.html">Cadastre-se</a>
+            </div>
+            </form>
+
+
+
+        </section>
+</fieldset>
+</body>
+</html>
